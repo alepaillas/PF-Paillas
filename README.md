@@ -1,2 +1,5 @@
-# PF-Paillas
-Proyecto final curso de Desarrollo Web en Coderhouse
+# Proyecto Final
+Proyecto final para el curso de Desarrollo Web de Coderhouse
+
+Visitalo en:
+https://alepaillas.com

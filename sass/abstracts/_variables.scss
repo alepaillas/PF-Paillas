@@ -1,0 +1,34 @@
+// colors
+// these get converted to css variables in the theme file
+// the final css variables are called by a defining word instead of a
+// use case. Ie: instead of --primary-color we do --rusticColor
+// it helps me think of the meaning of the color when i'm applying it
+
+//we have both hex and uri cause svgs in background-image are URI encoded
+// light theme
+$goldMetallic: '#D4B25A';
+$goldMetallicURI: '%23D4B25A';
+$indianRed: '#DB4F5A';
+$indianRedURI: '%23DB4F5A';
+$claret: '#8E283C';
+$claretURI: '%238E283C';
+$powderBlue: '#A1BBCB';
+$powderBlueURI: '%23A1BBCB';
+
+// dark theme
+$darkMossGreen: '#556B2F';
+$darkMossGreenURI: '%23556B2F';
+$burgundy: '#800020';
+$burgundyURI: '%23800020';
+$indigo: '#4B0082';
+$indigoURI: '%234B0082';
+$berkeleyBlue: '#003366';
+$berkeleyBlueURI: '%23003366';
+
+//see themeColors mixin for color definitions
+
+$fuchsia: '#880079';
+$fuchsiaURI: '%23880079';
+$lilac: '#6300AC';
+$lilacURI: '%236300AC';
+

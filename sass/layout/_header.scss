@@ -1,0 +1,122 @@
+@use '../abstracts';
+
+header {
+    /* --bs-breakpoint-lg */
+    @media only screen and (min-width: 992px) {
+	left: -4.3rem;
+    }
+
+    /* --bs-breakpoint-xl */
+    @media only screen and (min-width: 1200px) {
+	left: -5rem;
+    }
+
+    /* --bs-breakpoint-xxl */
+    @media only screen and (min-width: 1400px) {
+	left: -10rem;
+    }
+}
+
+header h1 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    top: -0.1rem;
+}
+
+h1 {
+    /* --bs-breakpooint-xs */
+    @media only screen and (min-width: 0px) {
+	left: 4.4rem;
+    }
+
+    /* --bs-breakpoint-lg */
+    @media only screen and (min-width: 992px) {
+	left: 2rem;
+    }
+
+    /* --bs-breakpoint-xl */
+    @media only screen and (min-width: 1200px) {
+	left: 2.2rem;
+    }
+
+    /* --bs-breakpoint-xxl */
+    @media only screen and (min-width: 1400px) {
+	left: 9.5rem;
+    }
+}
+
+header li {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* bg header */
+.columnTopLeft {
+    top: -1rem;
+    left: 4.4rem;
+}
+
+.towerLeft {
+    top: 23.1rem;
+    left: 2.1rem;
+}
+
+.towerDoor {
+    top: 48.6rem;
+    left: 7.4rem;
+}
+
+.groundLeft {
+    top: 25.2rem;
+    left: -27.5rem;
+}
+
+.alepaillasSvg {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+body.theme {
+    // changes colors to dark mode when called with true
+    @include abstracts.themeColors($darkMode: false);
+    @include abstracts.headerSvgs;
+}
+
+body.themeDark {
+    // changes colors to dark mode when called with true
+    @include abstracts.themeColors($darkMode: true);
+    @include abstracts.headerSvgs;
+}
+
+/* header list positions */
+.homeLi {
+    left: 9.4rem;
+}
+
+.workLi {
+    left: 12rem;
+}
+
+.textsLi {
+    left: 12.2rem;
+}
+
+.blogLi {
+    left: 13.1rem;
+}
+
+.bioLi {
+    left: 11.5rem;
+}
+
+.cvLi {
+    left: 10.8rem;
+}
+
+.statementLi {
+    left: 10.3rem;
+}
+
+.contactLi {
+    left: 14.4rem;
+}

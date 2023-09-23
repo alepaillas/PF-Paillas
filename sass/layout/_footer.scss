@@ -1,0 +1,107 @@
+@use '../abstracts';
+
+.containLayout {
+    contain: layout;
+}
+
+// bg footer
+.bgRight {
+    top: -46.9rem;
+    @media only screen and (min-width: 576px) {
+	right: -83.8rem;
+    }
+    @media only screen and (min-width: 768px) {
+	right: -91.3rem;
+    }
+
+    /* --bs-breakpoint-lg */
+    @media only screen and (min-width: 992px) {
+	right: -83.9rem;
+    }
+
+    /* --bs-breakpoint-xl */
+    @media only screen and (min-width: 1200px) {
+	right: -78.3rem;
+    }
+
+    /* --bs-breakpoint-xxl */
+    @media only screen and (min-width: 1400px) {
+	right: -100.5rem;
+    }
+}
+
+body.theme {
+    // changes colors to dark mode when called with true
+    @include abstracts.themeColors($darkMode: false);
+    @include abstracts.footerSvgs;
+}
+
+body.themeDark {
+    // changes colors to dark mode when called with true
+    @include abstracts.themeColors($darkMode: true);
+    @include abstracts.footerSvgs;
+}
+
+footer ul {
+    margin-bottom: 15rem;
+}
+
+footer li {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* footer list positions */
+.donateLi {
+    transform: rotate(-72deg);
+    //margin-top: 4.8rem;
+    //right: -4.5rem;
+    margin-top: 3.8rem;
+    right: -3.5rem;
+    @media only screen and (min-width: 768px) {
+	margin-top: 4.8rem;
+	right: -4.5rem;
+    }  
+    @media only screen and (min-width: 1400px) {
+	margin-top: 3.8rem;
+	right: -3.5rem;
+    }    
+}
+
+.socialMediaLi {
+    transform: rotate(-44deg);
+    margin-top: 9.7rem;
+    right: -8.9em;
+}
+
+.designLi {
+    transform: rotate(21deg);
+    margin-top: 18.9rem;
+    right: -13.1rem;
+}
+
+.byLi {
+    transform: rotate(23.5deg);
+    margin-top: 5rem;
+    right: -14.6rem;
+}
+
+.alejandraLi {
+    transform: rotate(-32.5deg);
+    margin-top: 5rem;
+    right: -6rem;
+}
+
+.copyrightLi {
+    transform: rotate(-46deg);
+    margin-top: -0.5rem;
+    right: -17.3rem;
+    @media only screen and (min-width: 0px) {
+	margin-top: 5.5rem;
+	right: -11.3rem;
+    }
+    @media only screen and (min-width: 1400px) {
+	margin-top: 6rem;
+	right: -8rem;
+    }
+}

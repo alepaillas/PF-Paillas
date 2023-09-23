@@ -1,0 +1,624 @@
+.iconSize {
+  height: 2rem;
+}
+
+.zIndex1 {
+  z-index: 1;
+}
+
+.zIndex2 {
+  z-index: 2;
+}
+
+.zIndexN1 {
+  z-index: -1;
+}
+
+.zIndexN2 {
+  z-index: -2;
+}
+
+/* font */
+.courierPrime {
+  font-family: "Courier Prime", monospace;
+}
+
+.portrait {
+  height: 20rem;
+  width: auto;
+  margin: auto;
+}
+
+/* svgs */
+.bgSvg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* overflow background image by setting padding with a corresponding negative margin */
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: -5rem;
+  margin-right: -5rem;
+}
+
+header {
+  /* --bs-breakpoint-lg */
+  /* --bs-breakpoint-xl */
+  /* --bs-breakpoint-xxl */
+}
+@media only screen and (min-width: 992px) {
+  header {
+    left: -4.3rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header {
+    left: -5rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  header {
+    left: -10rem;
+  }
+}
+
+header h1 {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  top: -0.1rem;
+}
+
+h1 {
+  /* --bs-breakpooint-xs */
+  /* --bs-breakpoint-lg */
+  /* --bs-breakpoint-xl */
+  /* --bs-breakpoint-xxl */
+}
+@media only screen and (min-width: 0px) {
+  h1 {
+    left: 4.4rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h1 {
+    left: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h1 {
+    left: 2.2rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  h1 {
+    left: 9.5rem;
+  }
+}
+
+header li {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* bg header */
+.columnTopLeft {
+  top: -1rem;
+  left: 4.4rem;
+}
+
+.towerLeft {
+  top: 23.1rem;
+  left: 2.1rem;
+}
+
+.towerDoor {
+  top: 48.6rem;
+  left: 7.4rem;
+}
+
+.groundLeft {
+  top: 25.2rem;
+  left: -27.5rem;
+}
+
+.alepaillasSvg {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+body.theme .alepaillasSvg {
+  background-image: url('data:image/svg+xml,<svg width="245" height="118" viewBox="0 0 245 118" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L241.494 3.86885L245 107.941L4.67409 118L0 0Z" fill="%23D4B25A"/></svg>');
+}
+body.theme .homeSvg {
+  background-image: url('data:image/svg+xml,<svg width="262" height="53" viewBox="0 0 262 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66469 0L258.113 5.76087L262 53L0 31.1087L4.66469 0Z" fill="%238E283C"/></svg>');
+}
+body.theme .workSvg {
+  background-image: url('data:image/svg+xml,<svg width="228" height="38" viewBox="0 0 228 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H224.109L228 38L0 27.7083V0Z" fill="%238E283C"/></svg>');
+}
+body.theme .textsSvg {
+  background-image: url('data:image/svg+xml,<svg width="107" height="30" viewBox="0 0 107 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H107V30L0 23.25V0Z" fill="%238E283C"/></svg>');
+}
+body.theme .blogSvg {
+  background-image: url('data:image/svg+xml,<svg width="267" height="33" viewBox="0 0 267 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L259.216 6.28571L267 33L0 26.7143V0Z" fill="%238E283C"/></svg>');
+}
+body.theme .bioSvg {
+  background-image: url('data:image/svg+xml,<svg width="103" height="32" viewBox="0 0 103 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H103V32L0 27.3171V0Z" fill="%238E283C"/></svg>');
+}
+body.theme .cvSvg {
+  background-image: url('data:image/svg+xml,<svg width="146" height="39" viewBox="0 0 146 39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H139.011L146 39L0 35.88V0Z" fill="%238E283C"/></svg>');
+}
+body.theme .statementSvg {
+  background-image: url('data:image/svg+xml,<svg width="274" height="38" viewBox="0 0 274 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H269.343L274 38L0 30.0833V0Z" fill="%238E283C"/></svg>');
+}
+body.theme .contactSvg {
+  background-image: url('data:image/svg+xml,<svg width="316" height="41" viewBox="0 0 316 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L316 7.88462V41H0V0Z" fill="%238E283C"/></svg>');
+}
+
+body.themeDark .alepaillasSvg {
+  background-image: url('data:image/svg+xml,<svg width="245" height="118" viewBox="0 0 245 118" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L241.494 3.86885L245 107.941L4.67409 118L0 0Z" fill="%236300AC"/></svg>');
+}
+body.themeDark .homeSvg {
+  background-image: url('data:image/svg+xml,<svg width="262" height="53" viewBox="0 0 262 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66469 0L258.113 5.76087L262 53L0 31.1087L4.66469 0Z" fill="%23880079"/></svg>');
+}
+body.themeDark .workSvg {
+  background-image: url('data:image/svg+xml,<svg width="228" height="38" viewBox="0 0 228 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H224.109L228 38L0 27.7083V0Z" fill="%23880079"/></svg>');
+}
+body.themeDark .textsSvg {
+  background-image: url('data:image/svg+xml,<svg width="107" height="30" viewBox="0 0 107 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H107V30L0 23.25V0Z" fill="%23880079"/></svg>');
+}
+body.themeDark .blogSvg {
+  background-image: url('data:image/svg+xml,<svg width="267" height="33" viewBox="0 0 267 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L259.216 6.28571L267 33L0 26.7143V0Z" fill="%23880079"/></svg>');
+}
+body.themeDark .bioSvg {
+  background-image: url('data:image/svg+xml,<svg width="103" height="32" viewBox="0 0 103 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H103V32L0 27.3171V0Z" fill="%23880079"/></svg>');
+}
+body.themeDark .cvSvg {
+  background-image: url('data:image/svg+xml,<svg width="146" height="39" viewBox="0 0 146 39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H139.011L146 39L0 35.88V0Z" fill="%23880079"/></svg>');
+}
+body.themeDark .statementSvg {
+  background-image: url('data:image/svg+xml,<svg width="274" height="38" viewBox="0 0 274 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H269.343L274 38L0 30.0833V0Z" fill="%23880079"/></svg>');
+}
+body.themeDark .contactSvg {
+  background-image: url('data:image/svg+xml,<svg width="316" height="41" viewBox="0 0 316 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L316 7.88462V41H0V0Z" fill="%23880079"/></svg>');
+}
+
+/* header list positions */
+.homeLi {
+  left: 9.4rem;
+}
+
+.workLi {
+  left: 12rem;
+}
+
+.textsLi {
+  left: 12.2rem;
+}
+
+.blogLi {
+  left: 13.1rem;
+}
+
+.bioLi {
+  left: 11.5rem;
+}
+
+.cvLi {
+  left: 10.8rem;
+}
+
+.statementLi {
+  left: 10.3rem;
+}
+
+.contactLi {
+  left: 14.4rem;
+}
+
+main {
+  margin-top: 25rem;
+  margin-bottom: 10rem;
+  /* --bs-breakpooint-xs */
+  /* --bs-breakpoint-lg */
+}
+@media only screen and (min-width: 0px) {
+  main {
+    margin-bottom: 25rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main {
+    margin-top: 16rem;
+  }
+}
+
+body.theme .playLayer1Svg {
+  background-image: url('data:image/svg+xml,<svg width="87" height="92" viewBox="0 0 87 92" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.91892 0L83.8649 3.88186L87 92L0 87.3418L3.91892 0Z" fill="%23A1BBCB"/></svg>');
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+body.theme .playLayer2Svg {
+  background-image: url('data:image/svg+xml,<svg width="147" height="164" viewBox="0 0 147 164" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.77778 0L147 7.02857V164L0 156.971L7.77778 0Z" fill="%23D4B25A"/></svg>');
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 2.625rem;
+  padding-right: 2.625rem;
+  margin-left: -2.655rem;
+  margin-right: -2.625rem;
+}
+body.theme .playLayer3Svg {
+  background-image: url('data:image/svg+xml,<svg width="311" height="284" viewBox="0 0 311 284" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8579 0L311 11.6712V284L0 274.663L10.8579 0Z" fill="%238E283C"/></svg>');
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+  margin-left: -7.5rem;
+  margin-right: -7.5rem;
+}
+
+body.themeDark .playLayer1Svg {
+  background-image: url('data:image/svg+xml,<svg width="87" height="92" viewBox="0 0 87 92" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.91892 0L83.8649 3.88186L87 92L0 87.3418L3.91892 0Z" fill="%23003366"/></svg>');
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+body.themeDark .playLayer2Svg {
+  background-image: url('data:image/svg+xml,<svg width="147" height="164" viewBox="0 0 147 164" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.77778 0L147 7.02857V164L0 156.971L7.77778 0Z" fill="%236300AC"/></svg>');
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 2.625rem;
+  padding-right: 2.625rem;
+  margin-left: -2.655rem;
+  margin-right: -2.625rem;
+}
+body.themeDark .playLayer3Svg {
+  background-image: url('data:image/svg+xml,<svg width="311" height="284" viewBox="0 0 311 284" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8579 0L311 11.6712V284L0 274.663L10.8579 0Z" fill="%23880079"/></svg>');
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+  margin-left: -7.5rem;
+  margin-right: -7.5rem;
+}
+
+.containLayout {
+  contain: layout;
+}
+
+.bgRight {
+  top: -46.9rem;
+  /* --bs-breakpoint-lg */
+  /* --bs-breakpoint-xl */
+  /* --bs-breakpoint-xxl */
+}
+@media only screen and (min-width: 576px) {
+  .bgRight {
+    right: -83.8rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .bgRight {
+    right: -91.3rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .bgRight {
+    right: -83.9rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .bgRight {
+    right: -78.3rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .bgRight {
+    right: -100.5rem;
+  }
+}
+
+body.theme .donateSvg {
+  background-image: url('data:image/svg+xml,<svg width="406" height="140" viewBox="0 0 406 140" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M291.075 15.894L385.701 70.658L405.82 136.137L95.0336 139.445L0.600356 87.2864L11.4089 61.6427L29.8953 38.5103L81.3537 18.2348L153.879 0.415162L291.075 15.894Z" fill="%23D4B25A"/></svg>');
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  /* overflow background image by setting padding with a corresponding negative margin */
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-left: -10rem;
+  margin-right: -10rem;
+}
+body.theme .socialMediaSvg {
+  top: -1rem;
+  left: -1.5rem;
+}
+body.theme .designSvg {
+  background-image: url('data:image/svg+xml,<svg width="378" height="82" viewBox="0 0 378 82" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.998566 0.776123L377.095 0.705212L267.395 81.4354L54.0583 79.0764L0.998566 0.776123Z" fill="%23D4B25A"/></svg>');
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  /* overflow background image by setting padding with a corresponding negative margin */
+  padding-left: 9rem;
+  padding-right: 11rem;
+  margin-left: -9rem;
+  margin-right: -11rem;
+}
+body.theme .bySvg {
+  background-image: url('data:image/svg+xml,<svg width="426" height="119" viewBox="0 0 426 119" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 10.0441L425.305 0.159022L337.322 114.225L202.771 110.429L107.386 118.842L0 10.0441Z" fill="%23DB4F5A"/></svg>');
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  /* overflow background image by setting padding with a corresponding negative margin */
+  padding-left: 12.5rem;
+  padding-right: 12.5rem;
+  margin-left: -12.5rem;
+  margin-right: -12.5rem;
+}
+body.theme .alejandraSvg {
+  background-image: url('data:image/svg+xml,<svg width="246" height="50" viewBox="0 0 246 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.163217 1.88197L245.956 0.142353L245.326 49.7019L5.65613 47.5004L0.163217 1.88197Z" fill="%23DB4F5A"/></svg>');
+  /* overflow background image by setting padding with a corresponding negative margin */
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  margin-left: -4.5rem;
+  margin-right: -4.5rem;
+}
+body.theme .copyrightSvg {
+  background-image: url('data:image/svg+xml,<svg width="347" height="55" viewBox="0 0 347 55" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.3421 54.6629L0.439034 0.146671L346.438 2.44145L346.118 50.5885L18.3421 54.6629Z" fill="%23DB4F5A"/></svg>');
+  /* overflow background image by setting padding with a corresponding negative margin */
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-left: -10rem;
+  margin-right: -10rem;
+}
+
+body.themeDark .donateSvg {
+  background-image: url('data:image/svg+xml,<svg width="406" height="140" viewBox="0 0 406 140" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M291.075 15.894L385.701 70.658L405.82 136.137L95.0336 139.445L0.600356 87.2864L11.4089 61.6427L29.8953 38.5103L81.3537 18.2348L153.879 0.415162L291.075 15.894Z" fill="%236300AC"/></svg>');
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  /* overflow background image by setting padding with a corresponding negative margin */
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-left: -10rem;
+  margin-right: -10rem;
+}
+body.themeDark .socialMediaSvg {
+  top: -1rem;
+  left: -1.5rem;
+}
+body.themeDark .designSvg {
+  background-image: url('data:image/svg+xml,<svg width="378" height="82" viewBox="0 0 378 82" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.998566 0.776123L377.095 0.705212L267.395 81.4354L54.0583 79.0764L0.998566 0.776123Z" fill="%236300AC"/></svg>');
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  /* overflow background image by setting padding with a corresponding negative margin */
+  padding-left: 9rem;
+  padding-right: 11rem;
+  margin-left: -9rem;
+  margin-right: -11rem;
+}
+body.themeDark .bySvg {
+  background-image: url('data:image/svg+xml,<svg width="426" height="119" viewBox="0 0 426 119" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 10.0441L425.305 0.159022L337.322 114.225L202.771 110.429L107.386 118.842L0 10.0441Z" fill="%23800020"/></svg>');
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  /* overflow background image by setting padding with a corresponding negative margin */
+  padding-left: 12.5rem;
+  padding-right: 12.5rem;
+  margin-left: -12.5rem;
+  margin-right: -12.5rem;
+}
+body.themeDark .alejandraSvg {
+  background-image: url('data:image/svg+xml,<svg width="246" height="50" viewBox="0 0 246 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.163217 1.88197L245.956 0.142353L245.326 49.7019L5.65613 47.5004L0.163217 1.88197Z" fill="%23800020"/></svg>');
+  /* overflow background image by setting padding with a corresponding negative margin */
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  margin-left: -4.5rem;
+  margin-right: -4.5rem;
+}
+body.themeDark .copyrightSvg {
+  background-image: url('data:image/svg+xml,<svg width="347" height="55" viewBox="0 0 347 55" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.3421 54.6629L0.439034 0.146671L346.438 2.44145L346.118 50.5885L18.3421 54.6629Z" fill="%23800020"/></svg>');
+  /* overflow background image by setting padding with a corresponding negative margin */
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-left: -10rem;
+  margin-right: -10rem;
+}
+
+footer ul {
+  margin-bottom: 15rem;
+}
+
+footer li {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* footer list positions */
+.donateLi {
+  transform: rotate(-72deg);
+  margin-top: 3.8rem;
+  right: -3.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .donateLi {
+    margin-top: 4.8rem;
+    right: -4.5rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .donateLi {
+    margin-top: 3.8rem;
+    right: -3.5rem;
+  }
+}
+
+.socialMediaLi {
+  transform: rotate(-44deg);
+  margin-top: 9.7rem;
+  right: -8.9em;
+}
+
+.designLi {
+  transform: rotate(21deg);
+  margin-top: 18.9rem;
+  right: -13.1rem;
+}
+
+.byLi {
+  transform: rotate(23.5deg);
+  margin-top: 5rem;
+  right: -14.6rem;
+}
+
+.alejandraLi {
+  transform: rotate(-32.5deg);
+  margin-top: 5rem;
+  right: -6rem;
+}
+
+.copyrightLi {
+  transform: rotate(-46deg);
+  margin-top: -0.5rem;
+  right: -17.3rem;
+}
+@media only screen and (min-width: 0px) {
+  .copyrightLi {
+    margin-top: 5.5rem;
+    right: -11.3rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .copyrightLi {
+    margin-top: 6rem;
+    right: -8rem;
+  }
+}
+
+.theme {
+  --rusticColor: #D4B25A;
+  --radiantColor: #DB4F5A;
+  --velvetColor: #8E283C;
+  --crispColor: #A1BBCB;
+  /* unvisited link */
+  /* mouse over link */
+  /* selected link */
+  /* visited link */
+}
+.theme a:link {
+  color: black;
+}
+.theme a:hover {
+  color: var(--crispColor);
+}
+.theme a:active {
+  color: var(--radiantColor);
+}
+.theme a:visited {
+  color: var(--rusticColor);
+}
+.themeDark {
+  --rusticColor: #6300AC;
+  --radiantColor: #800020;
+  --velvetColor: #880079;
+  --crispColor: #003366;
+  /* unvisited link */
+  /* mouse over link */
+  /* selected link */
+  /* visited link */
+}
+.themeDark a:link {
+  color: gainsboro;
+}
+.themeDark a:hover {
+  color: var(--crispColor);
+}
+.themeDark a:active {
+  color: var(--radiantColor);
+}
+.themeDark a:visited {
+  color: var(--rusticColor);
+}
+
+.rusticFill {
+  fill: var(--rusticColor);
+}
+
+.radiantFill {
+  fill: var(--radiantColor);
+}
+
+.velvetFill {
+  fill: var(--velvetColor);
+}
+
+.crispFill {
+  fill: var(--crispColor);
+}
+
+body {
+  background-color: var(--radiantColor);
+}
+
+.ms-n4 {
+  margin-left: -1.5rem;
+}
+
+.ms-n5 {
+  margin-left: -3rem;
+}
+
+/*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
+.btn-primary {
+  color: black;
+  background-color: var(--velvetColor);
+  border-color: var(--velvetColor); /*set the color you want here*/
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: var(--radiantColor);
+  border-color: var(--radiantColor); /*set the color you want here*/
+}
+
+.card {
+  --bs-card-border-width: 0;
+}
+
+body.theme {
+  --bs-body-bg: gainsboro;
+}
+body.theme .card-title {
+  --bs-card-title-color: black;
+}
+body.theme .card-body {
+  --bs-card-color: black;
+}
+body.theme .text-body-secondary {
+  --bs-secondary-color: black;
+}
+
+body.themeDark {
+  --bs-body-bg: black;
+  --bs-body-color: silver;
+}
+body.themeDark .card-title {
+  --bs-card-title-color: lightgrey;
+}
+body.themeDark .card-body {
+  --bs-card-color: lightgrey;
+}
+body.themeDark .text-body-secondary {
+  --bs-secondary-color: dimgrey;
+}
+body.themeDark .form-text {
+  color: black;
+}
+body.themeDark .form-control::placeholder {
+  color: dimgrey;
+}
+
+/*# sourceMappingURL=styles.css.map */

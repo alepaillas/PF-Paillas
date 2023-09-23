@@ -1,0 +1,147 @@
+@use 'variables';
+
+// we use !global cause mixins variables are scoped
+@mixin themeColors($darkMode: false) {
+    $rusticColor: #{variables.$goldMetallicURI} !global;
+    $radiantColor: #{variables.$indianRedURI} !global;
+    $velvetColor: #{variables.$claretURI} !global;
+    $crispColor: #{variables.$powderBlueURI} !global;
+    @if $darkMode {
+	$rusticColor: #{variables.$lilacURI} !global;
+	$radiantColor: #{variables.$burgundyURI} !global;
+	$velvetColor: #{variables.$fuchsiaURI} !global;
+	$crispColor: #{variables.$berkeleyBlueURI} !global;
+    }
+}
+
+@mixin headerSvgs() {
+    .alepaillasSvg {
+	background-image: url('data:image/svg+xml,<svg width="245" height="118" viewBox="0 0 245 118" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L241.494 3.86885L245 107.941L4.67409 118L0 0Z" fill="#{$rusticColor}"/></svg>');
+
+    }
+    .homeSvg {
+	background-image: url('data:image/svg+xml,<svg width="262" height="53" viewBox="0 0 262 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66469 0L258.113 5.76087L262 53L0 31.1087L4.66469 0Z" fill="#{$velvetColor}"/></svg>');
+    }
+
+    .workSvg {
+	background-image: url('data:image/svg+xml,<svg width="228" height="38" viewBox="0 0 228 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H224.109L228 38L0 27.7083V0Z" fill="#{$velvetColor}"/></svg>');
+    }
+
+    .textsSvg {
+	background-image: url('data:image/svg+xml,<svg width="107" height="30" viewBox="0 0 107 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H107V30L0 23.25V0Z" fill="#{$velvetColor}"/></svg>');
+    }
+
+    .blogSvg {
+	background-image: url('data:image/svg+xml,<svg width="267" height="33" viewBox="0 0 267 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L259.216 6.28571L267 33L0 26.7143V0Z" fill="#{$velvetColor}"/></svg>');
+    }
+
+    .bioSvg {
+	background-image: url('data:image/svg+xml,<svg width="103" height="32" viewBox="0 0 103 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H103V32L0 27.3171V0Z" fill="#{$velvetColor}"/></svg>');
+    }
+
+    .cvSvg {
+	background-image: url('data:image/svg+xml,<svg width="146" height="39" viewBox="0 0 146 39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H139.011L146 39L0 35.88V0Z" fill="#{$velvetColor}"/></svg>');
+    }
+
+    .statementSvg {
+	background-image: url('data:image/svg+xml,<svg width="274" height="38" viewBox="0 0 274 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H269.343L274 38L0 30.0833V0Z" fill="#{$velvetColor}"/></svg>');
+    }
+
+    .contactSvg {
+	background-image: url('data:image/svg+xml,<svg width="316" height="41" viewBox="0 0 316 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L316 7.88462V41H0V0Z" fill="#{$velvetColor}"/></svg>');
+    }
+}
+
+
+
+@mixin playSvgs {
+    .playLayer1Svg {
+	background-image: url('data:image/svg+xml,<svg width="87" height="92" viewBox="0 0 87 92" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.91892 0L83.8649 3.88186L87 92L0 87.3418L3.91892 0Z" fill="#{$crispColor}"/></svg>');
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	padding-left: .75rem;
+	padding-right: .75rem;
+	margin-left: -.75rem;
+	margin-right: -.75rem;
+    }
+
+    .playLayer2Svg {
+	background-image: url('data:image/svg+xml,<svg width="147" height="164" viewBox="0 0 147 164" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.77778 0L147 7.02857V164L0 156.971L7.77778 0Z" fill="#{$rusticColor}"/></svg>');
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	padding-left: 2.625rem;
+	padding-right: 2.625rem;
+	margin-left: -2.655rem;
+	margin-right: -2.625rem;
+    }
+
+    .playLayer3Svg {
+	background-image: url('data:image/svg+xml,<svg width="311" height="284" viewBox="0 0 311 284" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8579 0L311 11.6712V284L0 274.663L10.8579 0Z" fill="#{$velvetColor}"/></svg>');
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	padding-left: 7.5rem;
+	padding-right: 7.5rem;
+	margin-left: -7.5rem;
+	margin-right: -7.5rem;
+    }
+}
+
+
+
+@mixin footerSvgs {
+    .donateSvg {
+	background-image: url('data:image/svg+xml,<svg width="406" height="140" viewBox="0 0 406 140" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M291.075 15.894L385.701 70.658L405.82 136.137L95.0336 139.445L0.600356 87.2864L11.4089 61.6427L29.8953 38.5103L81.3537 18.2348L153.879 0.415162L291.075 15.894Z" fill="#{$rusticColor}"/></svg>');
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+	/* overflow background image by setting padding with a corresponding negative margin */
+	padding-left: 10rem;
+	padding-right: 10rem;
+	margin-left: -10rem;
+	margin-right: -10rem;
+    }
+
+    .socialMediaSvg {
+	top: -1rem;
+	left: -1.5rem;
+    }
+
+    .designSvg {
+	background-image: url('data:image/svg+xml,<svg width="378" height="82" viewBox="0 0 378 82" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.998566 0.776123L377.095 0.705212L267.395 81.4354L54.0583 79.0764L0.998566 0.776123Z" fill="#{$rusticColor}"/></svg>');
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	/* overflow background image by setting padding with a corresponding negative margin */
+	padding-left: 9rem;
+	padding-right: 11rem;
+	margin-left: -9rem;
+	margin-right: -11rem;
+    }
+
+    .bySvg {
+	background-image: url('data:image/svg+xml,<svg width="426" height="119" viewBox="0 0 426 119" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 10.0441L425.305 0.159022L337.322 114.225L202.771 110.429L107.386 118.842L0 10.0441Z" fill="#{$radiantColor}"/></svg>');
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	/* overflow background image by setting padding with a corresponding negative margin */
+	padding-left: 12.5rem;
+	padding-right: 12.5rem;
+	margin-left: -12.5rem;
+	margin-right: -12.5rem;
+    }
+
+    .alejandraSvg {
+	background-image: url('data:image/svg+xml,<svg width="246" height="50" viewBox="0 0 246 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.163217 1.88197L245.956 0.142353L245.326 49.7019L5.65613 47.5004L0.163217 1.88197Z" fill="#{$radiantColor}"/></svg>');
+	/* overflow background image by setting padding with a corresponding negative margin */
+	padding-left: 4.5rem;
+	padding-right: 4.5rem;
+	margin-left: -4.5rem;
+	margin-right: -4.5rem;
+    }
+
+    .copyrightSvg {
+	background-image: url('data:image/svg+xml,<svg width="347" height="55" viewBox="0 0 347 55" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.3421 54.6629L0.439034 0.146671L346.438 2.44145L346.118 50.5885L18.3421 54.6629Z" fill="#{$radiantColor}"/></svg>');
+	/* overflow background image by setting padding with a corresponding negative margin */
+	padding-left: 10rem;
+	padding-right: 10rem;
+	margin-left: -10rem;
+	margin-right: -10rem;
+    }
+}

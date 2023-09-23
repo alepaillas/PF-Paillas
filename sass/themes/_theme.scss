@@ -1,0 +1,75 @@
+// abstracts contains variables among other things
+@use '../abstracts';
+
+// check themeColors mixin for a method to update background-image colors
+
+// in order to pass a sass variable to a css variable you have to
+// use a different syntax #{}
+.theme {
+    --rusticColor: #{abstracts.$goldMetallic};
+    --radiantColor: #{abstracts.$indianRed};
+    --velvetColor: #{abstracts.$claret};
+    --crispColor: #{abstracts.$powderBlue};
+
+    /* unvisited link */
+    a:link {
+	color: black;
+    }
+    /* mouse over link */
+    a:hover {
+	color: var(--crispColor);
+    }
+    /* selected link */
+    a:active {
+	color: var(--radiantColor);
+    }
+    /* visited link */
+    a:visited {
+	color: var(--rusticColor);
+    }
+    
+    &Dark {
+	--rusticColor: #{abstracts.$lilac};
+	--radiantColor: #{abstracts.$burgundy};
+	--velvetColor: #{abstracts.$fuchsia};
+	--crispColor: #{abstracts.$berkeleyBlue};
+
+	/* unvisited link */
+	a:link {
+	    color: gainsboro;
+	}
+	/* mouse over link */
+	a:hover {
+	    color: var(--crispColor);
+	}
+	/* selected link */
+	a:active {
+	    color: var(--radiantColor);
+	}
+	/* visited link */
+	a:visited {
+	    color: var(--rusticColor);
+	}
+    }
+}
+
+// we could use a fancy @each here but gotta remember KISS
+.rusticFill {
+    fill: var(--rusticColor);
+}
+
+.radiantFill {
+    fill: var(--radiantColor);
+}
+
+.velvetFill {
+    fill: var(--velvetColor);
+}
+
+.crispFill {
+    fill: var(--crispColor);
+}
+
+body {
+    background-color: var(--radiantColor);
+}

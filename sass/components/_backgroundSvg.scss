@@ -1,0 +1,13 @@
+/* svgs */
+.bgSvg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* overflow background image by setting padding with a corresponding negative margin */
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: -5rem;
+    margin-right: -5rem;
+}

@@ -1,0 +1,58 @@
+// bootstrap negative margins
+.ms-n4 {
+    margin-left: -1.5rem;
+}
+
+.ms-n5 {
+    margin-left: -3rem;
+}
+
+/*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
+.btn-primary {
+    color: black;
+    background-color: var(--velvetColor);
+    border-color: var(--velvetColor); /*set the color you want here*/
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: var(--radiantColor);
+    border-color: var(--radiantColor); /*set the color you want here*/
+}
+
+.card {
+    --bs-card-border-width: 0;
+}
+
+body.theme {
+    --bs-body-bg: gainsboro;
+    .card-title {
+	--bs-card-title-color: black;
+    }
+    .card-body {
+	--bs-card-color: black;
+    }
+    .text-body-secondary {
+	--bs-secondary-color: black;
+    }
+}
+
+body.themeDark {
+    --bs-body-bg: black;
+    --bs-body-color: silver;
+    .card-title {
+	--bs-card-title-color: lightgrey;
+    }
+    .card-body {
+	--bs-card-color: lightgrey;
+    }
+    .text-body-secondary {
+	--bs-secondary-color: dimgrey;
+    }
+    .form-text {
+	color: black;
+    }
+    .form-control::placeholder {
+	color: dimgrey;
+    }
+}
