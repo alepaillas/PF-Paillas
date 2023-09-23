@@ -512,13 +512,13 @@ footer li {
   color: black;
 }
 .theme a:hover {
-  color: var(--crispColor);
+  color: gainsboro;
 }
 .theme a:active {
   color: var(--radiantColor);
 }
 .theme a:visited {
-  color: var(--rusticColor);
+  color: var(--crispColor);
 }
 .themeDark {
   --rusticColor: #6300AC;
@@ -534,13 +534,13 @@ footer li {
   color: gainsboro;
 }
 .themeDark a:hover {
-  color: var(--crispColor);
+  color: black;
 }
 .themeDark a:active {
   color: var(--radiantColor);
 }
 .themeDark a:visited {
-  color: var(--rusticColor);
+  color: var(--crispColor);
 }
 
 .rusticFill {
