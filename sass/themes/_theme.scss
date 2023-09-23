@@ -19,14 +19,6 @@
     a:hover {
 	color: gainsboro;
     }
-    /* selected link */
-    a:active {
-	color: var(--radiantColor);
-    }
-    /* visited link */
-    a:visited {
-	color: var(--crispColor);
-    }
     
     &Dark {
 	--rusticColor: #{abstracts.$lilac};
@@ -41,14 +33,6 @@
 	/* mouse over link */
 	a:hover {
 	    color: black;
-	}
-	/* selected link */
-	a:active {
-	    color: var(--radiantColor);
-	}
-	/* visited link */
-	a:visited {
-	    color: var(--crispColor);
 	}
     }
 }
@@ -72,4 +56,17 @@
 
 body {
     background-color: var(--radiantColor);
+}
+
+/* selected link */
+a:active {
+    color: var(--radiantColor);
+}
+/* visited link */
+a:visited {
+    color: var(--crispColor);
+}
+
+::selection {
+    background: #fffb00;
 }

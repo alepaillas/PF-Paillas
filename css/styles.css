@@ -43,6 +43,11 @@
   margin-right: -5rem;
 }
 
+.anchorCenter {
+  position: absolute;
+  transform: translateY(-50vh);
+}
+
 header {
   /* --bs-breakpoint-lg */
   /* --bs-breakpoint-xl */
@@ -505,20 +510,12 @@ footer li {
   --crispColor: #A1BBCB;
   /* unvisited link */
   /* mouse over link */
-  /* selected link */
-  /* visited link */
 }
 .theme a:link {
   color: black;
 }
 .theme a:hover {
   color: gainsboro;
-}
-.theme a:active {
-  color: var(--radiantColor);
-}
-.theme a:visited {
-  color: var(--crispColor);
 }
 .themeDark {
   --rusticColor: #6300AC;
@@ -527,20 +524,12 @@ footer li {
   --crispColor: #003366;
   /* unvisited link */
   /* mouse over link */
-  /* selected link */
-  /* visited link */
 }
 .themeDark a:link {
   color: gainsboro;
 }
 .themeDark a:hover {
   color: black;
-}
-.themeDark a:active {
-  color: var(--radiantColor);
-}
-.themeDark a:visited {
-  color: var(--crispColor);
 }
 
 .rusticFill {
@@ -563,6 +552,20 @@ body {
   background-color: var(--radiantColor);
 }
 
+/* selected link */
+a:active {
+  color: var(--radiantColor);
+}
+
+/* visited link */
+a:visited {
+  color: var(--crispColor);
+}
+
+::selection {
+  background: #fffb00;
+}
+
 .ms-n4 {
   margin-left: -1.5rem;
 }
@@ -580,8 +583,8 @@ body {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: var(--radiantColor);
-  border-color: var(--radiantColor); /*set the color you want here*/
+  background-color: var(--crispColor);
+  border-color: var(--crispColor); /*set the color you want here*/
 }
 
 .card {
