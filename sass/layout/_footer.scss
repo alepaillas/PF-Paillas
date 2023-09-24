@@ -122,7 +122,8 @@ footer li {
 }
 
 .copyrightLi {
-    transform: rotate(-46deg);
+    // transform: rotate(-46deg);
+    transform: rotate(-16deg);
     margin-top: -0.5rem;
     right: -17.3rem;
     @media only screen and (min-width: 0px) {
@@ -130,7 +131,9 @@ footer li {
 	right: -11.3rem;
     }
     @media only screen and (min-width: 1400px) {
-	margin-top: 6rem;
-	right: -8rem;
+	// margin-top: 6rem;
+	// right: -8rem;
+	margin-top: 2.9rem;
+	right: -10.9rem;
     }
 }
