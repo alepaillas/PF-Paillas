@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   
-  <body class="themeDark courierPrime">
+  <body class="themeDark courierPrime" id="body">
     <div class="container">
       <div class="row">
 	<div class="col-xxl col-lg p-3 bgleft containLayout">
 	  <header class="d-flex flex-column position-relative">
-            <h1 class="position-relative zIndex2">
+            <h1 class="position-relative zIndex2 animate__animated animate__slideInDown">
               <a class="" href="#">
 		<span class="fillThemeDark bgSvg alepaillasSvg">alepaillas</span>
 		<br>
@@ -34,10 +34,10 @@
             </h1>
             <nav>
               <ul class="list-unstyled">
-                <li class="position-relative homeLi">
+                <li class="position-relative homeLi animate__animated animate__rollIn animate__slow">
                   <a class="bgSvg homeSvg" href="#">home</a>
                 </li>
-                <li class="position-relative workLi">
+                <li class="position-relative workLi animate__animated animate__rollIn">
                   <a class="bgSvg workSvg" href="./pages/work.html">work</a>
                 </li>
 		<li class="position-relative textsLi">
@@ -86,20 +86,21 @@
 	
 	<div class="col-xxl-7 col-lg-8 p-3 zIndex2">
 	  <main>
-	    <div class="d-flex justify-content-center">
+	    <div class="d-flex justify-content-center playSquare">
 	      <div class="bgSvg playLayer3Svg">
 		<div class="bgSvg playLayer2Svg">
-		  <h2 class="bgSvg playLayer1Svg">
-		    <div class="animate__animated animate__flash">
-		      <span class="anchorCenter" id="Play"></span>
-		      <a href="#Play">PLAY</a>
+		  <div class="bgSvg playLayer1Svg">
+		    <div class="animate__animated animate__flash animate__repeat-3 animate__slow">
+		      <a class="fs-2" href="#body">PLAY</a>
 		    </div>
-		  </h2>
+		  </div>
 		</div>
 	      </div>
 	    </div>
 
-	    <p>(It doesn't do anything yet.)
+	    <div class="return">
+	      <a class="fs-3" href="#">return</a>
+	    </div>
 	  </main>
 	</div>
 	

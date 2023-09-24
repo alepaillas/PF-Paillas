@@ -1,5 +1,17 @@
 @use '../abstracts';
 
+body.theme {
+    // changes colors to dark mode when called with true
+    @include abstracts.themeColors($darkMode: false);
+    @include abstracts.footerSvgs;
+}
+
+body.themeDark {
+    // changes colors to dark mode when called with true
+    @include abstracts.themeColors($darkMode: true);
+    @include abstracts.footerSvgs;
+}
+
 .containLayout {
     contain: layout;
 }
@@ -28,18 +40,6 @@
     @media only screen and (min-width: 1400px) {
 	right: -100.5rem;
     }
-}
-
-body.theme {
-    // changes colors to dark mode when called with true
-    @include abstracts.themeColors($darkMode: false);
-    @include abstracts.footerSvgs;
-}
-
-body.themeDark {
-    // changes colors to dark mode when called with true
-    @include abstracts.themeColors($darkMode: true);
-    @include abstracts.footerSvgs;
 }
 
 footer ul {
@@ -78,6 +78,21 @@ footer li {
     transform: rotate(21deg);
     margin-top: 18.9rem;
     right: -13.1rem;
+    animation-name: pulseDesign;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    
+}
+
+@keyframes pulseDesign {
+    from {
+	transform: scale(1) rotate(21deg);
+    }
+
+    to {
+	transform: scale(1.075) rotate(21deg);
+    }
 }
 
 .byLi {
@@ -90,6 +105,20 @@ footer li {
     transform: rotate(-32.5deg);
     margin-top: 5rem;
     right: -6rem;
+    animation-name: pulseAlejandra;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes pulseAlejandra {
+    from {
+	transform: scale(1) rotate(-32.5deg);
+    }
+
+    to {
+	transform: scale(1.075) rotate(-32.5deg);
+    }
 }
 
 .copyrightLi {

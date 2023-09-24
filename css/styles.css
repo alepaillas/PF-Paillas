@@ -222,23 +222,6 @@ body.themeDark .contactSvg {
   left: 14.4rem;
 }
 
-main {
-  margin-top: 25rem;
-  margin-bottom: 10rem;
-  /* --bs-breakpooint-xs */
-  /* --bs-breakpoint-lg */
-}
-@media only screen and (min-width: 0px) {
-  main {
-    margin-bottom: 25rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  main {
-    margin-top: 16rem;
-  }
-}
-
 body.theme .playLayer1Svg {
   background-image: url('data:image/svg+xml,<svg width="87" height="92" viewBox="0 0 87 92" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.91892 0L83.8649 3.88186L87 92L0 87.3418L3.91892 0Z" fill="%23A1BBCB"/></svg>');
   padding-top: 5rem;
@@ -295,39 +278,20 @@ body.themeDark .playLayer3Svg {
   margin-right: -7.5rem;
 }
 
-.containLayout {
-  contain: layout;
-}
-
-.bgRight {
-  top: -46.9rem;
+main {
+  margin-top: 25rem;
+  margin-bottom: 10rem;
+  /* --bs-breakpooint-xs */
   /* --bs-breakpoint-lg */
-  /* --bs-breakpoint-xl */
-  /* --bs-breakpoint-xxl */
 }
-@media only screen and (min-width: 576px) {
-  .bgRight {
-    right: -83.8rem;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .bgRight {
-    right: -91.3rem;
+@media only screen and (min-width: 0px) {
+  main {
+    margin-bottom: 25rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .bgRight {
-    right: -83.9rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .bgRight {
-    right: -78.3rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .bgRight {
-    right: -100.5rem;
+  main {
+    margin-top: 16rem;
   }
 }
 
@@ -433,6 +397,42 @@ body.themeDark .copyrightSvg {
   margin-right: -10rem;
 }
 
+.containLayout {
+  contain: layout;
+}
+
+.bgRight {
+  top: -46.9rem;
+  /* --bs-breakpoint-lg */
+  /* --bs-breakpoint-xl */
+  /* --bs-breakpoint-xxl */
+}
+@media only screen and (min-width: 576px) {
+  .bgRight {
+    right: -83.8rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .bgRight {
+    right: -91.3rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .bgRight {
+    right: -83.9rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .bgRight {
+    right: -78.3rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .bgRight {
+    right: -100.5rem;
+  }
+}
+
 footer ul {
   margin-bottom: 15rem;
 }
@@ -471,8 +471,20 @@ footer li {
   transform: rotate(21deg);
   margin-top: 18.9rem;
   right: -13.1rem;
+  animation-name: pulseDesign;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 
+@keyframes pulseDesign {
+  from {
+    transform: scale(1) rotate(21deg);
+  }
+  to {
+    transform: scale(1.075) rotate(21deg);
+  }
+}
 .byLi {
   transform: rotate(23.5deg);
   margin-top: 5rem;
@@ -483,8 +495,20 @@ footer li {
   transform: rotate(-32.5deg);
   margin-top: 5rem;
   right: -6rem;
+  animation-name: pulseAlejandra;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 
+@keyframes pulseAlejandra {
+  from {
+    transform: scale(1) rotate(-32.5deg);
+  }
+  to {
+    transform: scale(1.075) rotate(-32.5deg);
+  }
+}
 .copyrightLi {
   transform: rotate(-46deg);
   margin-top: -0.5rem;
@@ -501,6 +525,60 @@ footer li {
     margin-top: 6rem;
     right: -8rem;
   }
+}
+
+.return {
+  position: absolute;
+  top: 2vh;
+  left: calc(50vw - 3rem);
+}
+
+#body:not(:target) {
+  overflow: auto;
+}
+#body:not(:target) header {
+  transform: translate(0, 0);
+  transition-property: left, transform;
+  transition-duration: 4s;
+}
+#body:not(:target) .playSquare {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 2s, opacity 2s;
+}
+#body:not(:target) .return {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 2s, opacity 2s;
+}
+#body:not(:target) footer {
+  transform: translate(0, 0);
+  transition-property: left, transform;
+  transition-duration: 4s;
+}
+
+#body:target {
+  overflow: hidden;
+}
+#body:target header {
+  transform: translate(-100vw, 0);
+  transition-property: left, transform;
+  transition-duration: 4s;
+}
+#body:target .playSquare {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 2s, opacity 2s;
+}
+#body:target .return {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 2s, opacity 2s;
+}
+#body:target footer {
+  transform: translate(100vw, 0);
+  transition-property: left, transform;
+  transition-duration: 4s;
 }
 
 .theme {

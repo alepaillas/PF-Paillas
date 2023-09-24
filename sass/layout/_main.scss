@@ -1,19 +1,5 @@
 @use '../abstracts';
 
-main {
-    margin-top: 25rem;
-    margin-bottom: 10rem;
-    /* --bs-breakpooint-xs */
-    @media only screen and (min-width: 0px) {
-	    margin-bottom: 25rem;
-    }
-
-    /* --bs-breakpoint-lg */
-    @media only screen and (min-width: 992px) {
-	    margin-top: 16rem;
-    }
-}
-
 body.theme {
     // changes colors to dark mode when called with true
     @include abstracts.themeColors($darkMode: false);
@@ -25,3 +11,18 @@ body.themeDark {
     @include abstracts.themeColors($darkMode: true);
     @include abstracts.playSvgs;
 }
+
+main {
+    margin-top: 25rem;
+    margin-bottom: 10rem;
+    /* --bs-breakpooint-xs */
+    @media only screen and (min-width: 0px) {
+	margin-bottom: 25rem;
+    }
+
+    /* --bs-breakpoint-lg */
+    @media only screen and (min-width: 992px) {
+	margin-top: 16rem;
+    }
+}
+

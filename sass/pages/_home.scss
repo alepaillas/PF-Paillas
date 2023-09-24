@@ -1,0 +1,61 @@
+.return {
+    position: absolute;
+    top: 2vh;
+    left: calc(50vw - 3rem);
+}
+
+#body:not(:target) {
+    overflow: auto;
+    header {
+	transform: translate(0, 0);
+	transition-property: left, transform;
+	transition-duration: 4s;
+    }
+    .playSquare {
+	visibility: visible;
+	opacity: 1;
+	transition:
+	    visibility 2s,
+	    opacity 2s;
+    }
+    .return {
+	visibility: hidden;
+	opacity: 0;
+	transition:
+	    visibility 2s,
+	    opacity 2s;
+    }
+    footer {
+	transform: translate(0, 0);
+	transition-property: left, transform;
+	transition-duration: 4s;
+    }
+}
+
+#body:target {
+    overflow: hidden;
+    header {
+	transform: translate(-100vw, 0);
+	transition-property: left, transform;
+	transition-duration: 4s;
+    }
+    .playSquare {
+	visibility: hidden;
+	opacity: 0;
+	transition:
+	    visibility 2s,
+	    opacity 2s;
+    }
+    .return {
+	visibility: visible;
+	opacity: 1;
+	transition:
+	    visibility 2s,
+	    opacity 2s;
+    }
+    footer {
+	transform: translate(100vw, 0);
+	transition-property: left, transform;
+	transition-duration: 4s;
+    }
+}
