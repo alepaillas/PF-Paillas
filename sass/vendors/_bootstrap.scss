@@ -24,6 +24,15 @@
     --bs-card-border-width: 0;
 }
 
+.form-check-input:checked {
+    background-color: var(--highlightColor);
+    border-color: var(--highlightColor);
+}
+
+.form-control:focus {
+    border-color: var(--highlightColor);
+}
+
 body.theme {
     --bs-body-bg: gainsboro;
     .card-title {

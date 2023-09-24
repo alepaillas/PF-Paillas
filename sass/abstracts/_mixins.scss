@@ -1,5 +1,7 @@
 @use 'variables';
 
+$highlightColor: #{variables.$highlighterCyanURI} !global;
+
 // we use !global cause mixins variables are scoped
 @mixin themeColors($darkMode: false) {
     $rusticColor: #{variables.$goldMetallicURI} !global;
@@ -14,6 +16,7 @@
     }
 }
 
+// this can be done in a smarter way but i can't be bothered
 @mixin headerSvgs() {
     .alepaillasSvg {
 	background-image: url('data:image/svg+xml,<svg width="245" height="118" viewBox="0 0 245 118" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L241.494 3.86885L245 107.941L4.67409 118L0 0Z" fill="#{$rusticColor}"/></svg>');
@@ -21,34 +24,58 @@
     }
     .homeSvg {
 	background-image: url('data:image/svg+xml,<svg width="262" height="53" viewBox="0 0 262 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66469 0L258.113 5.76087L262 53L0 31.1087L4.66469 0Z" fill="#{$velvetColor}"/></svg>');
+	&.active {
+	    background-image: url('data:image/svg+xml,<svg width="262" height="53" viewBox="0 0 262 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66469 0L258.113 5.76087L262 53L0 31.1087L4.66469 0Z" fill="#{$highlightColor}"/></svg>');
+	}
     }
 
     .workSvg {
 	background-image: url('data:image/svg+xml,<svg width="228" height="38" viewBox="0 0 228 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H224.109L228 38L0 27.7083V0Z" fill="#{$velvetColor}"/></svg>');
+	&.active {
+	    background-image: url('data:image/svg+xml,<svg width="228" height="38" viewBox="0 0 228 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H224.109L228 38L0 27.7083V0Z" fill="#{$highlightColor}"/></svg>');
+	}
     }
 
     .textsSvg {
 	background-image: url('data:image/svg+xml,<svg width="107" height="30" viewBox="0 0 107 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H107V30L0 23.25V0Z" fill="#{$velvetColor}"/></svg>');
+	&.active {
+	    background-image: url('data:image/svg+xml,<svg width="107" height="30" viewBox="0 0 107 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H107V30L0 23.25V0Z" fill="#{$highlightColor}"/></svg>');
+	}
     }
 
     .blogSvg {
 	background-image: url('data:image/svg+xml,<svg width="267" height="33" viewBox="0 0 267 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L259.216 6.28571L267 33L0 26.7143V0Z" fill="#{$velvetColor}"/></svg>');
+	&.active {
+	    background-image: url('data:image/svg+xml,<svg width="267" height="33" viewBox="0 0 267 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L259.216 6.28571L267 33L0 26.7143V0Z" fill="#{$highlightColor}"/></svg>');
+	}
     }
 
     .bioSvg {
 	background-image: url('data:image/svg+xml,<svg width="103" height="32" viewBox="0 0 103 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H103V32L0 27.3171V0Z" fill="#{$velvetColor}"/></svg>');
+	&.active {
+	    background-image: url('data:image/svg+xml,<svg width="103" height="32" viewBox="0 0 103 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H103V32L0 27.3171V0Z" fill="#{$highlightColor}"/></svg>');
+	}
     }
 
     .cvSvg {
 	background-image: url('data:image/svg+xml,<svg width="146" height="39" viewBox="0 0 146 39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H139.011L146 39L0 35.88V0Z" fill="#{$velvetColor}"/></svg>');
+	&.active {
+	    background-image: url('data:image/svg+xml,<svg width="146" height="39" viewBox="0 0 146 39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H139.011L146 39L0 35.88V0Z" fill="#{$highlightColor}"/></svg>');
+	}
     }
 
     .statementSvg {
 	background-image: url('data:image/svg+xml,<svg width="274" height="38" viewBox="0 0 274 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H269.343L274 38L0 30.0833V0Z" fill="#{$velvetColor}"/></svg>');
+	&.active {
+	    background-image: url('data:image/svg+xml,<svg width="274" height="38" viewBox="0 0 274 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H269.343L274 38L0 30.0833V0Z" fill="#{$highlightColor}"/></svg>');
+	}
     }
 
     .contactSvg {
 	background-image: url('data:image/svg+xml,<svg width="316" height="41" viewBox="0 0 316 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L316 7.88462V41H0V0Z" fill="#{$velvetColor}"/></svg>');
+	&.active {
+	    background-image: url('data:image/svg+xml,<svg width="316" height="41" viewBox="0 0 316 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L316 7.88462V41H0V0Z" fill="#{$highlightColor}"/></svg>');
+	}
     }
 }
 
@@ -98,6 +125,9 @@
 	padding-right: 10rem;
 	margin-left: -10rem;
 	margin-right: -10rem;
+	&.active {
+	    background-image: url('data:image/svg+xml,<svg width="406" height="140" viewBox="0 0 406 140" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M291.075 15.894L385.701 70.658L405.82 136.137L95.0336 139.445L0.600356 87.2864L11.4089 61.6427L29.8953 38.5103L81.3537 18.2348L153.879 0.415162L291.075 15.894Z" fill="#{$highlightColor}"/></svg>');
+	}
     }
 
     .socialMediaSvg {

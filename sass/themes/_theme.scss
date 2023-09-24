@@ -54,13 +54,17 @@
     fill: var(--crispColor);
 }
 
+:root {
+    --highlightColor: #{abstracts.$highlighterCyan};
+}
+
 body {
     background-color: var(--radiantColor);
 }
 
 /* selected link */
 a:active {
-    color: var(--radiantColor);
+    color: var(--highlightColor);
 }
 /* visited link */
 a:visited {
@@ -68,6 +72,6 @@ a:visited {
 }
 
 ::selection {
-    background: #fffb00;
+    background: var(--highlightColor);
 }
 
