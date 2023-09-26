@@ -43,9 +43,9 @@
   margin-right: -5rem;
 }
 
-.anchorCenter {
-  position: absolute;
-  transform: translateY(-50vh);
+.imgSmall {
+  height: 20rem;
+  width: auto;
 }
 
 header {
