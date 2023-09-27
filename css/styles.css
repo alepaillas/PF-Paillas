@@ -598,6 +598,15 @@ footer li {
   }
 }
 
+.game {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  top: calc(50vh - 300px);
+  left: calc(50vw - 400px);
+  background-color: black;
+}
+
 .return {
   position: absolute;
   top: 2vh;
@@ -615,6 +624,11 @@ footer li {
 #body:not(:target) .playSquare {
   visibility: visible;
   opacity: 1;
+  transition: visibility 2s, opacity 2s;
+}
+#body:not(:target) .game {
+  visibility: hidden;
+  opacity: 0;
   transition: visibility 2s, opacity 2s;
 }
 #body:not(:target) .return {
@@ -639,6 +653,11 @@ footer li {
 #body:target .playSquare {
   visibility: hidden;
   opacity: 0;
+  transition: visibility 2s, opacity 2s;
+}
+#body:target .game {
+  visibility: visible;
+  opacity: 1;
   transition: visibility 2s, opacity 2s;
 }
 #body:target .return {
